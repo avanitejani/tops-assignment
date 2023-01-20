@@ -1,0 +1,3 @@
+name	:	cd "c:\CTutoials\PRE`F¯uE\file\" ; if ($?) { gcc file.c -o file } ; if ($?) { .\file }
+email	:	avani
+age	:	1974062272
