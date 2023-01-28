@@ -15,7 +15,7 @@ int main()
     printf("enter your age: ");
     scanf("%d",&age);
 
-    fp=fopen("demo.txt","w");
+    fp=fopen("file2.txt","w");
     fprintf(fp,"name\t:\t%s\n",name);
     fprintf(fp,"email\t:\t%s\n",email);
     fprintf(fp,"age\t:\t%d\n",age);

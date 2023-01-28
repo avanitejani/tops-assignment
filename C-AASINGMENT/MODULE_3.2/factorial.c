@@ -2,6 +2,9 @@
 #include<stdio.h>
 int main()
 {
+    //n!=n
+    //3=6   ->(3*2*1)
+    //5=120 ->(5*4*3*2*1)
     int i,factorial=1,num;
     printf("enter the number :");
     scanf("%d",&num);
