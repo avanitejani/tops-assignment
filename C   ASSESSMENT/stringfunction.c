@@ -217,3 +217,26 @@ start:
 
     return 0;
 }
+
+
+
+
+/*
+C
+scanf("%d");
+scanf("%s");
+
+scanf("%s");
+scanf("");
+gets(name);
+
+C++
+
+cin>>id;
+cin.ignore();
+cin>>name;
+
+cin>>id;
+cin.ignore();
+cin>>(cin,name);
+*/
