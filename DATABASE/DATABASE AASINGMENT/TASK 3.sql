@@ -57,5 +57,26 @@ select max(salary)from employee group by department order by salary
 select employee.first_name, incentive.incentive_amount from employee join incentive on employee.employee_id=incentive.employee_ref_id
 
 -- 6 g) Create After Insert trigger on Employee table which insert records in view table
+create table employee_backup
+(
+employee_id int auto_increment,
+first_name varchar(20),
+last_name varchar(20),
+salary int,
+joining_date datetime,
+department varchar(30),
+primary key (employee_id)
+);
+
+-- TRIGGERS codd
+-- INSERT INTO employee_backup(empl_id,fir_name,las_name,salaryy,join_date,department_)
+-- VALUES(new.employee_id,new.first_name,new.last_name,new.salary,new.joining_date,new.department)
+
+-- INSERT INTO employee_backup(employee_id,first_name,last_name,salary,joining_date,department)
+-- VALUES(new.employee_id,new.first_name,new.last_name,new.salary,new.joining_date,new.department)
+
+-- view codd
+-- CREATE VIEW 'nrw_view101' AS
+-- select * from employee where salary <= "1000000";
 
 
