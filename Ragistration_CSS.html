@@ -1,0 +1,182 @@
+<!-- Create Registration form using HTML, CSS 
+ In how many ways can a CSS be integrated as a web page? 
+ Create simple three pages using External CSS, Internal CSS, and Inline 
+CSS. 
+ Create below page using HTML CSS -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <title></title>
+    <style>
+        /* css part */
+        .name
+         {
+            padding-top: 4px;
+            margin-top: 4px;
+            background-color: rgb(37, 106, 184);
+            color: rgb(135, 10, 10);
+        }
+        .main
+        {
+            color: rgb(192, 10, 10)  ;
+        }
+       .form
+         {
+            background-color: rgb(137, 211, 216);
+            color:  rgb(1, 1, 90);
+        }
+        .required
+        {
+            color: red;
+        }
+        .box
+        {
+            border-color: blueviolet;
+        }
+        .end
+        {
+            background-color: rgb(53, 137, 185); 
+            color: white; 
+            border-radius: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 align="center" class="name ">Individual Ragistration</h2>
+
+    </h2>
+
+    <form class="form">
+        <table align="center" width="100%">
+            <thead><b class="main">User Particulars</b></thead>
+
+            <tr>
+                <td align="right"><label for="idd" class="form"><span class="required">*</span> Login Id</label></td>
+                <td><input type="email" name="" id="idd" required class="box"></td>
+            </tr>
+            <tr>
+                <td align="right"> <label for="passwo" class="form"><span class="required">*</span>password</label></td>
+                <td><input type="password" name="" id="passwo" class="box"></td>
+            </tr>
+            <tr>
+                <td align="right">
+                    <label for="pass" class="form"><span class="required">*</span>Confirm Password</label>
+                </td>
+                <td><input type="password" name="" id="pass" class="box"></td>
+            </tr>
+            </tr>
+        </table><br><br>
+        <table align="center" width="90%">
+            <thead>
+                <b class="main"> personal Particulars</b>
+            </thead>
+            <tr>
+                <td align="right" class="form"><span class="required">*</span>salutation</td>
+                <td><select name="" >
+                        <option value="" class="form">select</option>
+                        <option value="" class="form">dr.</option>
+                        <option value="" class="form">sir</option>
+                        <option value="" class="form">Good Mornig</option>
+                        <option value="" class="form">Good Afternoon</option>
+                        <option value="" class="form">Good  evening</option>
+                        <option value="" class="form">Kind regrds</option>
+                        <option value="" class="form">Yours Truly</option>
+                        <option value="" class="form">sincerely</option>
+                        <option value="" class="form">Respectfully</option>
+
+                    </select></td>
+                <td align="right" class="form"><span class="required" >*</span>First Name</td>
+                <td><input type="text" class="box"></td>
+
+            </tr>
+            <tr>
+                <td align="right" class="form">Middle Name</td>
+                <td><input type="text"class="box"></td>
+                <td align="right" class="form"><span class="required" >*</span>Last Name</td>
+                <td><input type="text"class="box"></td>
+            </tr>
+            <tr>
+                <td align="right" class="n"><span class="required" class="box">*</span>Resident Status</td>
+            <td><select name="">
+                    <option value="" class="form">Select</option>
+                    <option value="" class="form">Surat</option>
+                    <option value="" class="form">london</option>
+                    <option value="" class="form">New York</option>
+                    <option value="" class="form">paris</option>
+                    <option value="" class="form">istanbul</option>
+                    <option value="" class="form">Dubai</option>
+                    <option value="" class="form">Hong Kong</option>
+                    <option value="" class="form">berlin</option>
+                    <option value="" class="form">Tokyo</option>
+                </select></td>
+                
+            <td align="right" class="n"><span class="required" >*</span>Country</td>
+            <td><select name="">
+                    <option value="" class="form">Select</option>
+                    <option value="" class="form">India</option>
+                    <option value="" class="form">Italy</option>
+                    <option value="" class="form">USA</option>
+                    <option value="" class="form">UK</option>
+                    <option value="" class="form">Germany</option>
+                    <option value="" class="form">Japan</option>
+                    <option value="" class="form">Australia</option>
+                    <option value="" class="form">Switzerland</option>
+                    <option value="" class="form">France</option>
+            </tr>
+            <tr>
+                <td align="right" class="form"><span class="required" >*</span>Email-id</td>
+                <td><input type="email"class="box"></td>
+                <td align="right" class="form"><span class="required">*</span>Mobile number</td>
+                <td><input type="number"class="box"></td>
+            </tr>
+        </table><br><br>
+        <table align="center" width="90%">
+            <thead><b class="main">Account Particulars</b></thead>
+            <tr>
+                <td align="right" class="form"><span class="required"class="box">*</span>15 Digit Account<br>No</td>
+                <td><input type="text"class="box"></td>
+                <td align="right" class="form"><span class="required"class="box">*</span>nick name</td>
+                <td><input type="text"class="box"></td>
+
+            </tr>
+            <td align="right" class="form"><span class="required">*</span>Fund Transfer</td>
+            <td><select name="">
+                    <option value="" class="form">select</option>
+                    <option value=""class="form">cash</option>
+                    <option value=""class="form">NEFT</option>
+                    <option value=""class="form">IMPS</option>
+                    <option value=""class="form">RTGS</option>
+                    <option value=""class="form">UPI</option>
+                    <option value=""class="form">Digital Wallet</option></td>
+        </table>
+        <table>
+            <thead><b class="main">DECLARATION</b><BR><BR>I have read, understood and hereby agree to the Terms and
+                Conditions. in respect of all products and
+                channels.
+                I understand that any changes in the terms and conditions applicable tothis relationship would be made
+                available to me on request at any 108 branches. I confirm that all accounts under this login name are
+                operated singly and in case of joint account operated by either or survivor/anyone or survivor(s) under
+                his her joint name respectively. I do hereby declare that information furnished in this form is true to
+                the
+                best of my knowledge and belief.</thead>
+        </table><br><br>
+        <table align="center">
+            <tr>
+                <td>
+                    <input type="submit" value="Submit" class="end">
+                    <input type="reset" value="Reset" class="end">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+</body>
+
+</html
